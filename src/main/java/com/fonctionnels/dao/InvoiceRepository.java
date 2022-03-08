@@ -11,4 +11,5 @@ import com.fonctionnels.entities.Invoice;
 public interface InvoiceRepository extends JpaRepository<Invoice, Long>
 {
    public Invoice findByInvoiceSignature(String invoice_signature);
+   public Invoice findByTpTIN(String tp_tin);
 }
